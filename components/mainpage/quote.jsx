@@ -1,6 +1,5 @@
 "use client";
 import { useTranslations } from "next-intl";
-import Image from "next/image";
 
 const Quote = () => {
   const t = useTranslations("Index");
@@ -33,12 +32,10 @@ const Quote = () => {
               </p>
             </blockquote>
             <figcaption className="flex items-center justify-center mt-6 space-x-3">
-              <Image
+              <img
                 className="w-6 h-6 rounded-full"
                 src="/michael-gouch.webp"
                 alt="profile picture"
-                width={300}
-                height={300}
               />
               <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
                 <div
@@ -82,12 +79,10 @@ const Quote = () => {
               </p>
             </blockquote>
             <figcaption className="flex items-center justify-center mt-6 space-x-3">
-              <Image
+              <img
                 className="w-6 h-6 rounded-full"
                 src="/michael-gouch.webp"
                 alt="profile picture"
-                width={300}
-                height={300}
               />
               <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
                 <div className="pr-3 font-medium text-gray-900 dark:text-white">

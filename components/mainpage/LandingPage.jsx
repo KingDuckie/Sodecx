@@ -8,7 +8,6 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useTranslations } from "next-intl";
-import Image from "next/image";
 
 /* eslint-disable @next/next/no-img-element */
 const LandingPage = () => {

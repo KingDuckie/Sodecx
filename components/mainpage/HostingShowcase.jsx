@@ -1,7 +1,6 @@
 import Link from "next/link";
 import React from "react";
 import { useTranslations } from "next-intl";
-import Image from "next/image";
 
 export default function HostingShowCase() {
   const t = useTranslations("Index");
@@ -72,23 +71,19 @@ export default function HostingShowCase() {
           </div>
           <div className="xl:w-1/3 md:w-1/3 w-full xl:pl-48">
             <div className="w-full">
-              <Image
+              <img
                 src="/display-hostingicon.webp"
                 alt="network-icon"
                 className="md:w-full sm:w-1/2 w-full"
-                width={353}
-                height={335}
               />
             </div>
           </div>
           <div className="xl:w-1/3 md:w-1/3 md:block hidden xl:pl-48">
             <div className="w-full">
-              <Image
+              <img
                 src="/network-icon.webp"
                 alt="network-icon"
                 className="md:w-full sm:w-1/2 w-full"
-                width={326}
-                height={321}
               />
             </div>
           </div>
