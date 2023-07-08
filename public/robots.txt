@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.sodecx.com
+
+# Sitemaps
+Sitemap: https://www.sodecx.com/sitemap.xml
