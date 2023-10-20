@@ -1,12 +1,15 @@
 import Header from "@/components/mainpage/Header";
 import { GlobalProvider } from "./GlobalProvider";
-import "./globals.css";
 import Footer from "@/components/mainpage/Footer";
+import "./globals.css";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import CookieBanner from "@/components/cookiebanner";
 import Head from "./head";
 import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
+import dynamic from "next/dynamic";
+
+// const Footer = dynamic(() => import("@/components/mainpage/Footer"));
 
 export function generateStaticParams() {
   return [{ locale: "en" }, { locale: "nl" }];
