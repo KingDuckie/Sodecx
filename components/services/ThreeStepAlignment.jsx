@@ -1,5 +1,7 @@
 "use client";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
+
 const ThreeStepAlignment = () => {
   const t = useTranslations("Index");
   return (
@@ -13,10 +15,13 @@ const ThreeStepAlignment = () => {
             <div className="hidden md:flex justify-center w-full">
               <div className="flex flex-col items-center md:items-end md:pr-12 md:border-r-4 border-gray-300 relative md:w-1/2">
                 <div aria-label="get a quote" role="img">
-                  <img
+                  <Image
                     className="focus:outline-none mt-10"
                     src="/quote-services.webp"
                     alt="get a quote"
+                    width={186}
+                    height={185}
+                    loading="eager"
                   />
                 </div>
                 <div aria-label="2" role="img">
@@ -34,16 +39,22 @@ const ThreeStepAlignment = () => {
                   </h2>
                 </div>
                 <div aria-label="delivery" role="img">
-                  <img
+                  <Image
                     className="focus:outline-none mt-24  "
                     src="/delivery-services.webp"
                     alt="delivery"
+                    width={186}
+                    height={185}
+                    loading="eager"
                   />
                 </div>
-                <img
+                <Image
                   className="hidden md:block absolute right-0 top-0 -mt-2 -mr-1"
                   src="/line.webp"
                   alt="line"
+                  width={3}
+                  height={256}
+                  loading="eager"
                 />
               </div>
 
@@ -64,10 +75,13 @@ const ThreeStepAlignment = () => {
                   </h2>
                 </div>
                 <div aria-label="collaboration" role="img">
-                  <img
+                  <Image
                     className="focus:outline-none mt-32"
                     src="/collab-services.webp"
                     alt="collaboration"
+                    width={186}
+                    height={185}
+                    loading="eager"
                   />
                 </div>
                 <div aria-label="3" role="img">
@@ -87,10 +101,13 @@ const ThreeStepAlignment = () => {
               </div>
             </div>
             <div className="md:hidden flex flex-col items-center w-full">
-              <img
+              <Image
                 className="focus:outline-none my-10"
                 src="/quote-services.webp"
                 alt="get a quote"
+                width={186}
+                height={185}
+                loading="eager"
               />
               <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none" alt="First">
                 <circle cx="24" cy="24" r="24" transform="rotate(90 24 24)" fill="#4338CA"/>
@@ -104,10 +121,13 @@ const ThreeStepAlignment = () => {
                   {t("seta5")}
                 </h2>
               </div>
-              <img
+              <Image
                 className="focus:outline-none my-10"
                 src="/collab-services.webp"
                 alt="collaboration"
+                width={186}
+                height={185}
+                loading="eager"
               />
               <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none" alt="second">
                 <circle cx="24" cy="24" r="23.5" transform="rotate(90 24 24)" fill="#F3F4F6" stroke="#818CF8"/>
@@ -121,10 +141,13 @@ const ThreeStepAlignment = () => {
                   {t("seta3")}
                 </h2>
               </div>
-              <img
+              <Image
                 className="focus:outline-none my-10"
                 src="/delivery-services.webp"
                 alt="delivery services"
+                width={186}
+                height={185}
+                loading="eager"
               />
               <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none" alt="third">
                 <circle cx="24" cy="24" r="23.5" transform="rotate(90 24 24)" fill="#F3F4F6" stroke="#818CF8"/>

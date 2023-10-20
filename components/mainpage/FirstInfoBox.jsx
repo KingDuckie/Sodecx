@@ -1,5 +1,6 @@
 "use client";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 const Firstdescription = () => {
   const t = useTranslations("Index");
@@ -84,20 +85,26 @@ const Firstdescription = () => {
                 {t("hofi6")}
               </p>
             </div>
-            <img
+            <Image
               data-aos="fade-left"
               className="hidden w-full mb-4 rounded-lg lg:mb-0 lg:flex"
               src="/webdesign2.webp"
               alt="dashboard feature image"
+              width={1920}
+              height={1280}
+              loading="eager"
             />
           </div>
 
           <div className="items-center gap-8 lg:grid lg:grid-cols-2 xl:gap-16">
-            <img
+            <Image
               data-aos="fade-right"
               className="hidden w-full mb-4 rounded-lg lg:mb-0 lg:flex"
               src="/webdesign3.webp"
               alt="feature image 2"
+              width={1920}
+              height={1280}
+              loading="eager"
             />
             <div className="text-gray-500 sm:text-lg dark:text-gray-400">
               <h2
@@ -220,10 +227,13 @@ const Firstdescription = () => {
                 {t("hofi1")}
               </h2>
               <p className="mb-8 font-light lg:text-xl">{t("hofi2")}</p>
-              <img
+              <Image
                 className="hidden w-full mb-4 rounded-lg lg:mb-0 lg:flex"
                 src="/webdesign2.webp"
                 alt="dashboard feature image"
+                width={1920}
+                height={1280}
+                loading="eager"
               />
               <ul
                 role="list"
@@ -286,10 +296,13 @@ const Firstdescription = () => {
           </div>
 
           <div className="items-center gap-8 lg:grid lg:grid-cols-2 xl:gap-16">
-            <img
+            <Image
               className=" mb-20 w-full rounded-lg lg:mb-0 lg:flex"
               src="/webdesign3.webp"
               alt="feature image 2"
+              width={1920}
+              height={1280}
+              loading="eager"
             />
             <div className="text-gray-500 sm:text-lg dark:text-gray-400">
               <h2 className="mb-4 text-2xl font-extrabold tracking-tight text-gray-900 dark:text-white">

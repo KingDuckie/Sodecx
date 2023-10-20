@@ -1,5 +1,7 @@
 "use client";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
+
 const AboutUsInfoBlock = () => {
   const t = useTranslations("Index");
   return (
@@ -19,10 +21,13 @@ const AboutUsInfoBlock = () => {
               </p>
             </div>
             <div className="w-full lg:w-6/12">
-              <img
+              <Image
                 className="w-full"
                 src="/about-us-page1.webp"
                 alt="people discussing on board"
+                width={5304}
+                height={3531}
+                loading="eager"
               />
             </div>
           </div>

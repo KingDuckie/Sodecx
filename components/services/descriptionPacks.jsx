@@ -1,5 +1,7 @@
 "use client";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
+
 function DescriptionPack() {
   const t = useTranslations("Index");
   return (
@@ -19,10 +21,13 @@ function DescriptionPack() {
                 </div>
               </div>
               <div className="lg:w-1/3 md:w-1/2 w-full relative h-96 flex items-end justify-center">
-                <img
+                <Image
                   className="absolute w-full h-full inset-0 object-cover object-center rounded-md"
                   src="/services-sale.webp"
                   alt="picture"
+                  width={6444}
+                  height={4296}
+                  loading="eager"
                 />
                 <div className="relative z-10 bg-white rounded shadow p-6 w-10/12 -mb-20">
                   <div className="flex items-center justify-between w-full sm:w-full mb-8">
@@ -109,10 +114,13 @@ function DescriptionPack() {
                 </div>
               </div>
               <div className="lg:w-1/3 md:w-1/2 w-full relative h-96 flex items-end justify-center">
-                <img
+                <Image
                   className="absolute w-full h-full inset-0 object-cover object-center rounded-md"
                   src="/collab-dev-services.webp"
                   alt="picture2"
+                  width={3429}
+                  height={5143}
+                  loading="eager"
                 />
                 <div className="relative z-10 p-4 bg-white shadow rounded mx-auto w-9/12 -mb-20">
                   <h4 className="text-gray-800 font-normal text-md leading-4 tracking-normal mb-2">

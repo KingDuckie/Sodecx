@@ -7,6 +7,7 @@ import CookieBanner from "@/components/cookiebanner";
 import Head from "./head";
 import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
+
 export function generateStaticParams() {
   return [{ locale: "en" }, { locale: "nl" }];
 }

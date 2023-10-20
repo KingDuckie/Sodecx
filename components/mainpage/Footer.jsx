@@ -3,6 +3,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 const Footer = () => {
   const t = useTranslations("Index");
@@ -108,11 +109,13 @@ const Footer = () => {
               href="#"
               className="flex items-center justify-center mb-5 text-2xl font-semibold text-gray-900 dark:text-white"
             >
-              <img
+              <Image
                 src="/logo.webp"
                 className="h-6 mr-3 sm:h-9"
                 alt="Landwind Logo"
-                loading="lazy"
+                width={26.21}
+                height={36}
+                loading="eager"
               />
               Sodecx
             </Link>

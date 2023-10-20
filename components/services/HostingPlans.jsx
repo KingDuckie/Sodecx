@@ -2,6 +2,8 @@
 
 import Link from "next/link";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
+
 function HostingPlan() {
   const t = useTranslations("Index");
   return (
@@ -19,17 +21,23 @@ function HostingPlan() {
           <div className="w-11/12 mx-auto">
             <div className="xl:flex lg:flex items-end">
               <div className="flex flex-wrap xl:w-1/4  items-center justify-center pt-8 pb-8 lg:mb-0 xl:mb-0 md:mb-2 sm:mb-2 mb-2 shadow bg-transparent">
-                <img
+                <Image
                   src="/calculator-img.webp"
                   alt="calculator"
+                  width={158}
+                  height={120}
+                  loading="eager"
                 />
               </div>
               <div className="xl:flex lg:flex md:flex sm:flex shadow">
                 <div className="bg-white pt-8 pb-8 lg:mb-0 xl:mb-0 md:mb-0 sm:mb-0 mb-2 pl-6 pr-6 flex flex-col xl:w-1/3 lg:w-1/3 justify-center items-center  dark:dark:bg-[#818CF8] rounded-tl-lg">
                   <div className="mb-6">
-                    <img
+                    <Image
                       src="/paper-plane.webp"
                       alt="paperPlane"
+                      width={35}
+                      height={35}
+                      loading="eager"
                     />
                   </div>
                   <p className="text-center text-2xl font-bold text-gray-800 mb-3 dark:text-white">
@@ -47,9 +55,12 @@ function HostingPlan() {
                 </div>
                 <div className="bg-white pt-8 pb-8 lg:mb-0 xl:mb-0 md:mb-0 sm:mb-0 mb-2 pl-6 pr-6 flex flex-col xl:w-1/3 lg:w-1/3 justify-center items-center  dark:dark:bg-[#818CF8]">
                   <div className="mb-5">
-                    <img
+                    <Image
                       src="/plane.webp"
                       alt="plane"
+                      width={39}
+                      height={39}
+                      loading="eager"
                     />
                   </div>
                   <p className="text-center text-2xl font-bold text-gray-800 mb-3 dark:text-white">
@@ -67,9 +78,12 @@ function HostingPlan() {
                 </div>
                 <div className="bg-white pt-8 pb-8 lg:mb-0 xl:mb-0 md:mb-0 sm:mb-0 mb-2 pl-6 pr-6 flex flex-col xl:w-1/3 lg:w-1/3 justify-center items-center  dark:dark:bg-[#818CF8]">
                   <div className="mb-6">
-                    <img
+                    <Image
                       src="/start-button.webp"
                       alt="start-button"
+                      width={35}
+                      height={35}
+                      loading="eager"
                     />
                   </div>
                   <p className="text-center text-2xl font-bold text-gray-800 mb-3 dark:text-white">
@@ -87,9 +101,12 @@ function HostingPlan() {
                 </div>
                 <div className="bg-white pt-8 pb-8 lg:mb-0 xl:mb-0 md:mb-0 sm:mb-0 mb-2 pl-6 pr-6 flex flex-col xl:w-1/3 lg:w-1/3 justify-center items-center  dark:dark:bg-[#818CF8] rounded-tr-lg">
                   <div className="mb-6">
-                    <img
+                    <Image
                       src="/start-button.webp"
                       alt="start-button"
+                      width={35}
+                      height={35}
+                      loading="eager"
                     />
                   </div>
                   <p className="text-center text-2xl font-bold text-gray-800 mb-3 dark:text-white">

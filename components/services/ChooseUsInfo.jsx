@@ -1,5 +1,7 @@
 "use client";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
+
 const ChooseUsInfo = () => {
   const t = useTranslations("Index");
   return (
@@ -15,10 +17,13 @@ const ChooseUsInfo = () => {
                 {t("sewc2")}
               </p>
               <div className="lg:hidden lg:w-3/5 xl:w-3/5 w-full lg:mt-0 mt-6">
-                <img
+                <Image
                   src="/webdesign.webp"
                   alt="ongoing meeting"
                   className="w-full obejct-fit object-center object-fill h-full"
+                  width={1920}
+                  height={1280}
+                  loading="eager"
                 />
               </div>
               <div className="mt-6 md:mt-10 grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6 lg:mt-6 2xl:mt-12">
@@ -102,10 +107,13 @@ const ChooseUsInfo = () => {
               </div>
             </div>
             <div className="hidden lg:block lg:w-3/5 xl:w-3/5 w-full lg:mt-0 mt-6">
-              <img
+              <Image
                 src="/webdesign.webp"
                 alt="ongoing meeting"
                 className="w-full obejct-fit object-center object-fill h-full"
+                width={1920}
+                height={1280}
+                loading="eager"
               />
             </div>
           </div>

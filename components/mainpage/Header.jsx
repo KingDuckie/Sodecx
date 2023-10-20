@@ -5,6 +5,7 @@ import { useTheme } from "next-themes";
 import { MoonIcon, SunIcon } from "@heroicons/react/24/solid";
 import { usePathname } from "next-intl/client";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -43,11 +44,14 @@ export default function Header() {
         <nav className="bg-white border-gray-200 py-2.5 dark:bg-gray-900">
           <div className="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
             <Link href="/" className="flex items-center">
-              <img
+              <Image
                 src="/logo.webp"
-                className="h-9 mr-3 md:h-12 lg:h-20"
+                className="h-9 mr-3 md:h-12 w-full lg:h-20"
                 alt="Sodecx Logo"
                 rel="preload"
+                width={60}
+                height={80}
+                loading="eager"
               />
               <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
                 Sodecx
@@ -71,19 +75,25 @@ export default function Header() {
                 locale="en"
                 className="mr-5 ml-5 hidden md:block"
               >
-                <img
+                <Image
                   src="/icon-english.webp"
                   alt="englishFlag"
-                  className="h-10"
+                  className="h-10 w-full"
                   rel="preload"
+                  width={40}
+                  height={40}
+                  loading="eager"
                 />
               </Link>
               <Link href={pathname} locale="nl" className="hidden md:block">
-                <img 
+                <Image 
                   src="/icon-dutch.webp" 
                   alt="dutchFlag" 
-                  className="h-10"
+                  className="h-10 w-full"
                   rel="preload"
+                  width={40}
+                  height={40}
+                  loading="eager"
                   />
               </Link>
               <button
@@ -170,11 +180,14 @@ export default function Header() {
                       locale="en"
                       className="grid  lg:hidden w-1/2"
                     >
-                      <img
+                      <Image
                         src="/icon-english.webp"
                         alt="englishFlag"
-                        className="justify-self-center h-10 "
+                        className="justify-self-center h-10"
                         rel="preload"
+                        width={40}
+                        height={40}
+                        loading="eager"
                       />
                     </Link>
                     <Link
@@ -182,11 +195,14 @@ export default function Header() {
                       locale="nl"
                       className="grid lg:hidden w-1/2"
                     >
-                      <img
+                      <Image
                         src="/icon-dutch.webp"
                         alt="dutchFlag"
                         className="justify-self-center h-10"
                         rel="preload"
+                        width={40}
+                        height={40}
+                        loading="eager"
                       />
                     </Link>
                   </div>
