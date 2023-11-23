@@ -9,12 +9,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useTranslations } from "next-intl";
 import Image from 'next/image';
-import dynamic from "next/dynamic";
-
-// const FirstInfoBox = dynamic(() => import('./FirstInfoBox'));
-// const CardShowCase = dynamic(() => import('./CardShowCase'));
-// const Quote = dynamic(() => import('./quote'));
-// const HostingShowCase = dynamic(() => import('./HostingShowcase'));
 
 /* eslint-disable @next/next/no-img-element */
 const LandingPage = () => {

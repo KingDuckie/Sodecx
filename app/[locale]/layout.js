@@ -7,9 +7,6 @@ import CookieBanner from "@/components/cookiebanner";
 import Head from "./head";
 import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
-import dynamic from "next/dynamic";
-
-// const Footer = dynamic(() => import("@/components/mainpage/Footer"));
 
 export function generateStaticParams() {
   return [{ locale: "en" }, { locale: "nl" }];
